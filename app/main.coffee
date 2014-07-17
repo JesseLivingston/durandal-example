@@ -4,8 +4,9 @@
         'text':         '../lib/require/text',
         'durandal':     '../lib/durandal/js',
         'plugins':      '../lib/durandal/js/plugins',
-        'transactions': '../lib/durandal/js/transactions',
+        'transitions':  '../lib/durandal/js/transitions',
         'knockout':     '../lib/knockout/knockout-3.1.0',
+        'bootstrap':    '../lib/bootstrap/js/bootstrap'
         'jquery':       '../lib/jquery/jquery-1.9.1'
     }
   });
@@ -24,7 +25,7 @@
     }
 
     app.start().then ->
-      app.setRoot 'home'
+      app.setRoot 'shell'
       console.log 'fuck......'
       return
 

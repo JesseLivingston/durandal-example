@@ -1,15 +1,10 @@
-<div>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <ul class="nav" data-bind="foreach: router.navigationModel">
-        <li data-bind="css: {active: isActive}">
-          <a data-bind="attr: {href: hash}, html: title"></a>
-        </li>
-      </ul>
-      <div class="loader pull-right" data-bind="css: {active: router.isNavigating}">
-        <i class="icon-spinner icon-2x icon-spin"></i>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid page-host" data-bind="router: {transition: 'entrance' }"></div>
-</div>
+<section>
+  <h2>Hello! What is your name?</h2>
+  <form class="form-inline">
+    <fieldset>
+       <label>Name</label>
+       <input type="text" data-bind="value: name, valueUpdate: 'afterkeydown'"/>
+       <button type="submit" class="btn" data-bind="click: sayHello, enable: name">Click Me</button>
+    </fieldset>
+  </form>
+</section>
