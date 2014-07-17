@@ -24,7 +24,7 @@
     }
 
     app.start().then ->
-      app.setRoot 'shell'
+      app.setRoot 'home'
       console.log 'fuck......'
       return
 

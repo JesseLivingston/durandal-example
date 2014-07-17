@@ -21,7 +21,7 @@ define(function(require) {
     dialog: true
   });
   app.start().then(function() {
-    app.setRoot('shell');
+    app.setRoot('home');
     console.log('fuck......');
   });
 });
